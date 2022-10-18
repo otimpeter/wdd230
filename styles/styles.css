@@ -1,0 +1,80 @@
+.container{
+    justify-content: center;
+    width: 550px;
+    height: 100vh;
+    margin: 20px;
+    padding: 20px;
+    margin-bottom: 40px;
+  }
+  .image-header{
+    display: flex;
+    padding: 30px;
+    margin: 20px;
+    background-color: 	#CD5C5C;
+    color: #ffffff;
+    border-radius: 10px;
+    /* box-shadow: 8px 3px 8px 1px #969696; */
+    -webkit-box-shadow: -1px 1px 5px 9px rgba(0,0,0,0.50);
+    -moz-box-shadow: -1px 1px 5px 9px rgba(0,0,0,0.50);
+    box-shadow: -1px 1px 5px 9px rgba(0,0,0,0.50);
+  }
+  .container h1 {
+    text-align: center;
+  }
+  .image-header h2 {
+    margin-left: 20px;
+    margin-top: 50px;
+    align-items: center;
+  }
+  .image{
+    /* display: flex */
+  }
+  
+  .my-pic{
+    width: 120px;
+    height: 120px;
+  }
+  
+  .content-section{
+    margin-left: 20px;
+  }
+  .content-section .doted {
+    font-size: 30px;
+    font-weight: 500px;
+    margin-right: 5px;
+  }
+  
+  .footer-section p {
+    font-size: 20px;
+    text-align: center;
+  }
+  .footer-section .footer1 {
+    text-align: center;
+    color: 	#ffffff;
+    font-size: 22px;
+  }
+  .footer-section .footer2 {
+    text-align: center;
+    color: 	#ffa500;
+    font-size: 18px;
+  }
+  .footer-text {
+    font-style: italic;
+    text-align: center;
+    top: 1;
+    margin-top: -10px;
+  }
+  .footer{
+    padding: 10px;
+    margin: 20px;
+    background-color: 	#CD5C5C;
+    border-radius: 10px;
+    -webkit-box-shadow: -1px 1px 5px 9px rgba(0,0,0,0.50);
+    -moz-box-shadow: -1px 1px 5px 9px rgba(0,0,0,0.50);
+    box-shadow: -1px 1px 5px 9px rgba(0,0,0,0.50);
+  }
+  Footer
+  © 2022 GitHub, Inc.
+  Footer navigation
+  Terms
+  Privacy
