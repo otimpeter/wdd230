@@ -462,14 +462,14 @@ form label.top input:required{
 form label.top input:required:valid{
   border-left: greem solid 6px;
 }
-.mainDirectory{
+.mainDirect{
   display: grid;
   width: 100%;
   grid-template-columns: 1fr;
   justify-content: center;
 
 }
-.cardDiresctory{
+.cardDiresct{
   margin: 0;
   display: block;
   justify-content: center;
