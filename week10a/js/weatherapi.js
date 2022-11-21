@@ -13,3 +13,4 @@ fetch(apiURL)
     document.querySelector("#weathericon").setAttribute("alt", desc);
     document.querySelector("figcaption").textContent = desc;
   });
+  
