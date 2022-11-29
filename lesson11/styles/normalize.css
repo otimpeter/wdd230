@@ -46,6 +46,13 @@
       list-style: none;
       margin: 1rem 0;
     }
+    .weatherContainer {
+      padding:2rem;
+    }
+
+    .padding-size {
+      padding: 1rem;
+    }
     .container2 {
       width: 100%;
       height: 300px;
@@ -78,9 +85,9 @@
     justify-items: center;
     justify-content: space-evenly;
     background-color: #fff;
-    margin: 0;
-    padding: 5rem;
+    padding: 1rem;
   }
+ 
   .row {
     display: flex;
     align-items: center;
@@ -99,8 +106,8 @@
     color: #000;
   }
   .row {
-    padding: 5rem;
-    gap: 5rem;
+    /* padding: 5rem; */
+    gap: 2rem;
   }
      
   .column img{
