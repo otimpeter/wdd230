@@ -1,5 +1,4 @@
 // Windchill
-
 const temp = parseFloat(document.querySelector('#temp').textContent);
 const wind = parseFloat(document.querySelector('#wind').textContent);
 const windchill = document.querySelector('#windchill');
