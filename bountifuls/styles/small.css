@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,500;0,900;1,500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,700;0,800;1,400;1,700;1,800&display=swap');
 
-@media only screen and (min-width: 280px) and (max-width: 800px) {
+/* Applies to everything in the document */
 * {
     font-family: 'Montserrat', sans-serif;
 }
@@ -11,7 +11,7 @@
     position: sticky;
     top: 0px;
     z-index: 10;
-    background: green;
+    background: greenyellow;
 }
 
 .banner-content {
@@ -26,12 +26,8 @@
     flex-grow: 1;
     line-height: 1.4;
     font-weight: 500;
-    
 }
-.banner-text p{
-    color: #fff;
-    font-size: 25px;
-}
+
 .banner-button {
     background: none;
     border: none;
@@ -53,7 +49,7 @@
 
 /* HEADER */
 header {
-    background-color:  rgba(0, 0, 0, 0.7);
+    background-color: #14213d;
     display: grid;
    grid-template-columns: 1fr 1fr;
     justify-content: space-evenly;
@@ -67,14 +63,13 @@ header img {
 
 #logo img {
     width: 100%;
-    height: auto;
+    height: 80px;
     padding: 20px;
 }
 
 nav {
     margin: auto;
     grid-column: 1/3;
-    padding: 2rem 0;
 }
 
 nav li {
@@ -109,6 +104,28 @@ nav a:hover {
     justify-content: space-around;
     margin-right: 40px;
 }
+
+.socials img {
+    width: 24px;
+}
+
+.socials {
+    display: block;
+    grid-row: 2;
+    grid-column: 1/3;
+    margin: auto;
+}
+
+.date {
+    color: #e5e5e5;
+    font-style: italic;
+    text-align: center;
+    background-color: #14213d;
+    padding-bottom: 10px;
+    font-family: 'EB Garamond', serif;
+    font-weight: 500;
+}
+
 /* MAIN */
 main {
     display: flex;
@@ -152,7 +169,7 @@ main section,  main section div {
 }
 
 #hero button {
-    background-color:  rgba(0, 0, 0, 0.7);
+    background-color: #14213d;
     color: #e5e5e5;
     cursor: pointer;
     padding: 10px;
@@ -167,44 +184,20 @@ main section,  main section div {
     font-weight: 700;
 }
 
-/* fresh Page*/
-#join button {
-    background-color:  rgba(0, 0, 0, 0.7);
-    color: #e5e5e5;
-    cursor: pointer;
-    padding: 10px;
-    border: none;
-    border-radius: 10px;
-    position: relative;
-    /* bottom: 300px; */
-    z-index: 5;
-    width: 200px;
-    height: 50px;
-    font-size: 1.5em;
-    font-weight: 700;
-}
-.join h1{
-    color:brown;
-}
-.membershipLevels h2 {
-    color: brown;
-}
-
-/* spolight images*/
 #spotlights {
     height: 100%;
 }
 
-#spot1 img, #spot2 img, #sport3 img{
+#spot1 img, #spot2 img, #spot3 img {
     /* filter: brightness(.5); */
+    height: 100%;
     width: 100%;
-    height: 200px;
-   /* object-fit: cover;*/
+    object-fit: cover;
     /* position: relative; */
 }
 
-#spot1 h3, #spot2 h3, #spot3 h3{
-    background-color:  rgba(0, 0, 0, 0.7);
+#spot1 h3, #spot2 h3, #spot3 h3 {
+    background-color: #14213d;
     color: #e5e5e5;
     z-index: 3;
     position: relative;
@@ -223,35 +216,81 @@ main section,  main section div {
 #spot1, #spot2, #spot3 {
     width: 95%;
     height: 400px;
-    color: brown;
     /* margin: -20px; */
 }
-#spot1 img{
-    width: 100%;
-    height: 200px;
-}
 
-#food, #fruits, #join, #weather {
+#news, #event, #join, #weather {
     padding: 10px;
 }
 
-#food a:hover {
-    color:  rgba(0, 0, 0, 0.7);
+#news a:hover {
+    color: #14213d;
 }
-#join img{
-    width: 100%;
-    height: 145px;
-}
+
 button:hover {
     background-color: #fca311;
 }
+
+#join button {
+    background-color: #14213d;
+    color: #e5e5e5;
+    cursor: pointer;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    position: relative;
+    /* bottom: 300px; */
+    z-index: 5;
+    width: 200px;
+    height: 50px;
+    font-size: 1.5em;
+    font-weight: 700;
+}
+
+footer {
+    background-color: #14213d;
+    text-align: center;
+    color: #e5e5e5;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+footer img {
+    filter: invert(1);
+    width: 25%;
+}
+
+#copyright {
+    /* line-height: .5em; */
+    font-size: .7em;
+}
+
+footer a {
+    text-decoration: none;
+    color: #fca311;
+}
+
+/*.discover {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    gap: 10px;
+}
+
+.discover div {
+    padding: 10px;
+}
+*/
 
 .join {
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
-
 
 .membershipLevels {
     margin: 10px;
@@ -296,114 +335,160 @@ button:hover {
     margin: 5px;
 }
 
-
-/* join page*/
-
-.join {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+label, textarea, select{
+    display: inline-block;
+    /* float: left; */
+    clear: left;
+    width: 450px;
+    text-align: left;
 }
 
-.membershipLevels {
-    margin: 10px;
+.form #submit {
+    background-color: #14213d;
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    position: relative;
+    /* bottom: 300px; */
+    z-index: 5;
+    width: 200px;
+    height: 50px;
+    font-size: 1.5em;
+    font-weight: 700;
+    margin: 15px;
 }
 
-.form h1 {
-    display: block;
-    text-align: center;
+.form #submit:hover {
+    background-color: #fca311;
 }
-
-
-.form form {
+/*
+.thanks {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 50px auto;
-    color: black;
-}
-
-.contb {
-    width: 50%;
-    height: 200px;
-
-}
-.form form label {
-    /* font-size: 1.5em; */
-    font-weight: 700;
-    text-align: left;
-    margin: 5px;
-}
-
-/*contact us*/
-.wrapper{
-    width: 100%;
-    min-height: 100vh;
-    overflow: hidden;
-    background-color: #ddd;
-
-}
-.row{
-    width: 100%;
-    padding: 50px 100;
-}
-.image-section {
-    width: 30%;
-    float: left;
-
-}
-.image-section img{
-    width: 100%;
-    height: 400px;
-}
-.content{
-   width: 60%; 
-   float: left;
-   margin-left: 50px;
-}
-.content h1{
-    font-size: 70px;
-    letter-spacing: 3.5px;
-    margin-top: 25px;
-    color: brown;
-}
-.content h2{
-    font-size: 40px;
-    font-family: Arial, Helvetica, sans-serif;
-    color: brown;
-    margin-top: 25px;
-
-}
-.content p{
-    font-size: 18px;
-    font-family: Arial, Helvetica, sans-serif;
-    margin-top: 10px;
-    line-height: 1.5;
-}
-
-/* footer*/
-footer {
-    background-color: black;
+    margin: auto;
+    padding: 50px;
     text-align: center;
-    color: #e5e5e5;
-    padding: 5px 0;
-    display: block;
-    flex-direction: column;
-    width: 100%;
-    height: auto;
 }
 
-#social .facebook:hover,
-#social:hover .tooltip,
-#social .facebook:hover .tooltip::before {
-  background-color: #3b5999;
-  color: #ffffff;
+.thanks h1, .board h1 {
+    display: block;
 }
-#social .twitter:hover,
-#social.twitter:hover .tooltip,
-#social .twitter:hover .tooltip::before {
-  background-color: #46c1f6;
-  color: #ffffff;
+
+.directory #content {
+    width: 100%;
+    margin: 0 auto;
 }
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
 }
+.cards section {
+    border: 2px solid #14213d;
+    background-color: white;
+    padding: 30px;
+    text-align: center;
+    width: 300px;
+    margin: 20px;
+}
+
+.directory h2, h1 {
+    color: #14213d;
+    text-align: center;
+}
+.directory .cards img {
+    width: 300px;
+    height: 180px;
+}
+
+.directory a {
+    text-decoration: none;
+    color: #14213d;
+}
+
+.directory p:first-of-type {
+    font-style: italic;
+    font-size: 0.75em;
+}
+
+.directory .icons{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+
+.icons button {
+    background-color: white;
+    border: none;   
+}
+
+.icons button:hover {
+    background-color: #e5e5e5;
+    cursor: pointer;
+}
+
+.icons img {
+    width: 50px;
+}
+
+.directory table {
+    width: 90%;
+    border-collapse: collapse;
+    margin: auto;
+    overflow: hidden;
+}
+
+.directory td {
+
+    padding: 10px;
+}
+
+tr:nth-child(odd) {
+    background-color: #e5e5e5;
+}
+
+tr td {
+    display: block;
+}
+*/
+#weather_top {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+#weather_top h2{
+    text-align: center;
+    font-size: 3em;
+}
+/*
+.board {
+    padding: 10px;
+}
+
+.board img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 10px;
+}
+
+.board {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+*/
+

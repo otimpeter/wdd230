@@ -1,24 +1,13 @@
-let daynames = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday",
-"Friday", "Saturday"];
-let months = ["January", "Febuary", "March", "April", "May", "June",
-"July", "August", "September", "October", "Novermber", "December"];
-let d = new Date();
-let dayName = daynames[d.getDay()];
-let monthName = months[d.getMonth()];
-let fulldate = dayName + "," + monthName + " " + d.getDate() + "," + d.getFullYear();
+// Last Modified
+let currentDate = document.lastModified;
+document.querySelector('#lastModified').textContent = currentDate;
 
-document.getElementById("currentdate"), textContent = fulldate;
+// Copyright Date
+let date = new Date();
+let year = date.getFullYear();
+document.querySelector('#copyrightYear').innerHTML = year;
 
-try {
-    let options = {
-        weekday: "long", 
-        day: "muemeric",
-        month: "long",
-        year: "numeric"
-    }
-    document.getElementById(
-        "currentdate2"
-        ).textContent = new Date().toLocaleDateString("en-US", Option);
-     } catch (e) {
-        alert("error with code or your broweswer does not support locale");
-     };
+// Today's Date
+const dateField = document.querySelector(".date");
+const fullDate = new Intl.DateTimeFormat("en-US", { dateStyle: "full" }).format(date);
+dateField.innerHTML = fullDate;

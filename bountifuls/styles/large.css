@@ -1,31 +1,25 @@
 @media screen and (min-width: 1200px) {
-   body {
-        background-color: #FFF;
+
+    body {
+        background-color: #14213d;
     }
 
-    /* Header/ Nav */
+    /* HEADER / NAV */
     header {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        background-color: rgba(0, 0, 0, 0.7);
     }
 
     nav {
         margin:auto;
         grid-column: 2;
         grid-row: 1;
-        
     }
     
     nav ul {
         display: flex;
         flex-direction: row;
-        color: #FFF;
-    }
-    nav ul li a{
-        color: #FFF;
-        font-size: 25px;
-        text-decoration: none;
+        /* justify-content: space-evenly; */
     }
 
     #hamburger {
@@ -33,20 +27,31 @@
     }
 
     nav li {
-        display: flex;
+        display: block;
         padding: 20px ;
     }
+
 
     #logo {
         grid-column: 1;
         margin: auto;
         grid-row: 1;
     }
-    #logo img {
-        width: 100px;
-        height: auto;
-    } 
 
+    .socials {
+        display: flex;
+        gap: 10px;
+        grid-column: 3;
+        grid-row: 1;
+        margin: auto;
+    }
+
+    .socials img {
+        width: 40px;
+    }
+
+
+    /* MAIN */
     main {
         background-color: white;
         margin: auto;
@@ -62,13 +67,14 @@
         background-color: #e5e5e5;
         margin: 10px;
         text-align: center;
+        /* border: 2px solid #14213d; */
         height: auto;
     }
 
-    #fruits {
+    #event {
         grid-column: 1;
         grid-row: 1;
-       /* height: 428px; */
+        /* height: 428px; */
     }
 
     #hero {
@@ -76,91 +82,83 @@
         grid-row: 1/3;
         height: 661px;
     }
-    #hero picture {
-        width: 100%;
-        height: auto;
+
+    #weather {
+        grid-column: 1;
+        grid-row: 2;
     }
- /* spot light home page*/
- #spotlights {
-    grid-column: 3;
-    grid-row: 1/4;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    height: auto
-}
 
-#spot1 img, #spot2 img, #spot3 img {
-    width: 100%;
-    height: 400px;
-    overflow: hidden;
-    position: relative;
-    bottom: 150px;
-}
+    #weather_top {
+        margin-bottom: 0;
+        margin-top: 0;
+    }
 
-#spot1 h3, #spot2 h3, #spot3 h3 {
-    z-index: 3;
-    position: relative;
-    /*top: 125px;*/
-    font-size: 2em;
-    padding-top: 2px;
-    padding-bottom: 2px;
-}
+    #join {
+        grid-column: 1;
+        grid-row: 3;
+    }
 
-#spotlights a {
-    text-decoration: none;
-}
+    #news {
+        grid-column: 2;
+        grid-row: 3;
+        margin-top: -105px;
+        text-align: left;
+        line-height: 1.5em;
+    }
 
-#spotlights h3:hover {
-    color: #fca311;
-}
+    #news a {
+        text-decoration: none;
+        color: #3a3a3a;
+    }
 
-#spot1, #spot2, #spot3 {
-    width: 95%;
-    height: 400px;
-    margin: 10px;
-}
-
-
-button:hover {
-    background-color: #fca311;
-    
-}
-/* About us*/
-.image-section{
-    width: 100%;
-    float: none;
-}
-.content{
-    width: 100%; 
-    float: none;
-    margin-left: 0;
- }
- .content h1{
-    font-size: 60px;
-    letter-spacing: 2px;
-    margin-top: 30px;
-}
-.content h2{
-    font-size: 30px;
-
-}
-.content p{
-    font-size: 18px;
-}*/
-   /* MAIN*/
-
-    /*footer*/
-    footer {
-        background-color: rgba(0, 0, 0, 0.7);
-        text-align: center;
-        color: #e5e5e5;
-        padding: 10px;
+    #spotlights {
+        grid-column: 3;
+        grid-row: 1/4;
         display: flex;
         flex-direction: column;
+        justify-content: space-evenly;
+        height: auto
     }
-    
-     #about {
+
+    #spot1 img, #spot2 img, #spot3 img {
+        width: 100%;
+        height: 400px;
+        overflow: hidden;
+        position: relative;
+        bottom: 150px;
+    }
+
+    #spot1 h3, #spot2 h3, #spot3 h3 {
+        z-index: 3;
+        position: relative;
+        top: 125px;
+        font-size: 2em;
+        padding-top: 2px;
+        padding-bottom: 2px;
+    }
+
+    #spotlights a {
+        text-decoration: none;
+    }
+
+    #spotlights h3:hover {
+        color: #fca311;
+    }
+
+    #spot1, #spot2, #spot3 {
+        width: 95%;
+        height: 400px;
+        margin: 10px;
+    }
+
+
+    button:hover {
+        background-color: #fca311;
+        
+    }
+
+    /* FOOTER */
+    #about {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
     }
@@ -180,12 +178,13 @@ button:hover {
     #contact {
         grid-column: 3;
         grid-row: 1;
+        /* line-height: .5em; */
     }
 
     #copyright-large {
         display: block;
     }
-  /* discover*/
+
     .discover div:hover{
       -moz-box-shadow: 0 0 10px #ccc;
       -webkit-box-shadow: 0 0 10px #ccc;
@@ -208,11 +207,12 @@ button:hover {
         padding: 20px;
     }
 
-    .board {
+    /*.board {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         gap: 20px;
     }
-
+    */
+    
 }
