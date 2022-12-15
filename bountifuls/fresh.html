@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Home Page</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="shortcut icon" href="favicon (1).ico">
+        <link href="https://fonts.googleapis.com/css2?family=Exo&family=Merriweather+Sans&display=swap" rel="stylesheet">   
+        <link href="https://fonts.googleapis.com/css2?family=Exo&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles/small.css">
+        <link rel="stylesheet" href="styles/medium.css">
+        <link rel="stylesheet" href="styles/large.css">
+        <link rel="stylesheet" href="styles/normalize.css">
+
+    </head>
+    <body>
+        <div class="banner">
+            <div class="banner-content">
+                <div class="banner-text"><p>Welcome to Bountful Fresh Fruits</p></div>>
+              <!--  <button type="button" class="banner-button"><img src="images/fruits1.jpg" alt="Close Button"></button>-->
+            </div>
+        </div>
+        <header>
+            <div id="logo">
+                <a href="index.html"><img src="images/logo.png" alt="Bountiful Foods Logo"></a>
+            </div>
+            <a href="#" id="hamburger">&#9776;</a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="fresh.html">Fresh</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                </ul>
+            </nav>
+        </header>
+            
+             <!-- fetch("C:\Users\LENOVO\Desktop\week12\scripts")   
+             .then(res => ) -->
+             
+        
+        
+        
+        
+        
+        
+        
+        
+        <main class="join">
+                    <div class="form">
+                        <h1>Join Us</h1>
+                        <form action="/WDD230/chamber/thanks.html" method="GET" autocomplete="on">
+                            <div class="contb">
+                            <label for="fname">
+                                First Name
+                                <input type="text" id="fname" name="fname" required>
+                            </label>
+                     
+                            <label for="email">
+                                Email
+                                <input type="email" placeholder="Peterotim@example.com" id="email" name="email" required>
+                            </label>
+            
+                            <label for="phone">
+                                Phone
+                                <input type="tel" id="phone" name="phone" required>
+                            </label>
+            
+                            <label for="membership">
+                                Choose Fruit Options:
+                                <select id="membership" name="membership">
+                                    <option selected disabled hidden>Make a Selection</option>
+                                    <option value="cabo">Cabohydrates</option>
+                                    <option value="Proteins">Proteins</option>
+                                    <option value="fats">Fats</option>
+                                    <option value="suger">Suger</option>
+                                    <option value="calories">Calories</option>
+                                </select>
+                            </label>
+                        </div>
+            
+                            <label for="dateTime" hidden>
+                                Datetime
+                                <input type="datetime-local" name="dateTime" id="dateTime" required hidden>
+                            </label>
+                            
+                        </form>
+                    </div>
+            
+                    <div class="membershipLevels">
+            
+                        <h1>Membership Levels</h1>
+            
+                        <div class="nonprofit">
+                            <h2>Nonprofit</h2>
+                            <p class="fee">No fee</p>
+                            <p>
+                                Nonprofit membership is for businesses that are not for profit and are not
+                                self-employed.
+                            </p>
+                        </div>
+            
+                        <div class="bronze">
+                            <h2>Bronze</h2>
+                            <p class="fee">200,000 shillings/month</p>
+                            <p>
+                                Bronze membership is for businesses with less than 50 employees that are for profit. Benefits
+                                include:
+                            </p>
+                            <ul>
+                                <li>15% discount on events</li>
+                                <li>10% discount on advertising</li>
+                            </ul>
+                        </div>
+            
+                        <div class="silver">
+                            <h2>Silver</h2>
+                            <p class="fee">500,000 shillings/month</p>
+                            <p>
+                                Silver membership is for businesses with less than 250 employees that are for profit. Additional
+                                benefits include:
+                            </p>
+                            <ul>
+                                <li>50% discount on events</li>
+                                <li>50% discount on advertising</li>
+                                <li>Free participation in the trade fair</li>
+                            </ul>
+                        </div>
+            
+                        <div class="gold">
+                            <h2>Gold</h2>
+                            <p class="fee">1,000,000 shillings/month</p>
+                            <p>
+                                Gold membership is for businesses with more than 400 employees that are for profit. Additional
+                                benefits include:
+                            </p>
+                            <ul>
+                                <li>50% discount on events</li>
+                                <li>50% discount on advertising</li>
+                                <li>Free participation in the trade fair</li>
+                                <li>5 featured ads per year</li>
+                                <li>1 free training per quarter</li>
+                            </ul>
+                        </div>
+            
+                    </div>
+                </main>
+
+            <section class="directory">
+                    <div class="displayItems">
+                    <div class="fruits"></div>
+                    <table class="table"></table>
+                </div>
+            </section>
+        <footer>
+            <section id="about">
+                <div id="address">
+                    <h3>We Located</h3>
+                    <p>Makindye Div</p>
+                    <p>Kampala Uganda</p>
+                    <a href="#">Directions</a> 
+                </div>
+                <div id="contact">
+                    <h3>Contact Us</h3>
+                    <p>info@ocm.ug</p>
+                    <p> +256-776-7850</p>
+                </div>
+    
+                <section id="copyright">
+                    <p>&copy; <span id="copyrightYear"></span>Bountiful Food | Peter Charles Otim | WDD230 BYU</p>
+                    <p>lastModified: <span id="lastModified"></span></p>
+                    <p><span id="lastVisited"></span></p>
+                </section>
+            </footer>
+            
+            <script src="scripts/javascript.js" async defer></script>
+            <script src="scripts/date.js"></script>
+            <script src="scripts/fruits.js"></script>
+    </body>
+</html>

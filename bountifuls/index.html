@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Home Page</title>
+        <meta name="description" content="">
+        <link rel="shortcut icon" href="favicon (1).ico">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="styles/small.css">
+        <link rel="stylesheet" href="styles/medium.css">
+        <link rel="stylesheet" href="styles/large.css">
+        <link rel="stylesheet" href="styles/normalize.css">
+
+    </head>
+    <body>
+        <div class="banner">
+            <div class="banner-content">
+                <div class="banner-text"><p>Welcome to Bountiful Foods</p></div>
+               <!--<button type="button" class="banner-button"><img src="images/fruits1.jpg" alt="Close Button"></button>-->
+            </div>
+        </div>
+        <header>
+            <div id="logo">
+                <a href="index.html"><img src="images/logo.png" alt=""></a>
+            </div>
+            <a href="#" id="hamburger">&#9776;</a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="fresh.html">Fresh</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main class="home">
+            <h1>Bountful Food</h1>
+            <section id="hero">
+                <picture>
+                    <source media="(min-width: 1300px)" srcset="images/fruits1.jpg">
+                    <source media="(min-width: 1200px)" srcset="images/fruits2.jpg">
+                    <source media="(min-width: 840px)" srcset="images/fruits3.jpg">
+                    <source media="(min-width: 700px)" srcset="images/fruits4.jpg">
+                    <img src="images/fruits4.jpg" alt="Bountiful Food Hero Image">
+              </picture>
+                <!-- <button type="button">Discover Us</button> -->
+            </section>
+            <section id="fruits">
+                <h2>Fresh fruits</h2>
+                <hr>
+                <p>Our taste and quality preferences are very simple! We are easily satisfied with the best.</p>
+                <p>Ensuring that you are delivered quality at all times</p>
+                <p>We use the finest, farm-fresh vegetables, fruits, and spices, and synthesise them to present the following culinary accompaniments.</p>
+            </section>
+            <section id="weather">
+                <h2>Weather</h2>
+                <div id="weather_top">
+                    <h2><span id="temp"></span>&#8457;</h2>
+                    <figure><img src="https://cdn3.iconfinder.com/data/icons/luchesa-vol-9/128/Weather-64.png" alt="Placeholder" id="weathericon" />
+                        <figcaption></figcaption>
+                    </figure>
+                </div>
+                <hr>
+                <p>Wind: <span id="wind"></span> MPH</p>
+                <p>Wind Chill: <span id="windchill"></span><span id="windDegree"></span></p>
+            </section>
+        
+            <section id="food">
+                <h2>Fresh food</h2>
+                <hr>
+                <h3>Califonia Base</h3>
+                <p>At Bountiful Food Sales, we listen to you and tailor our solutions to your specific needs.  We have access to a wide range of industry leading food suppliers and wholesale food distributors who provide high quality fresh and frozen fruits, vegetables and proteins.  We shop to bring you the pricing, quality, reliability, and service you should expect.</p>           
+                <hr>
+                <hr>
+            </section>
+            <section id="join">
+                <h2>Join Us</h2>
+                <p>At Bountiful Food Sales, we listen to you and tailor our solutions to your specific needs. 
+                     We have access to a wide range of industry leading food suppliers and wholesale food distributors who
+                     provide high quality fresh and frozen fruits, vegetables and proteins.  We shop to bring you the pricing, 
+                     quality, reliability, and service you should expect.</p>
+
+                <h2> Our foods</h2>
+                <img src="images/raust2a.jpg" alt="our foods">
+                
+            </section>
+            <section id="spotlights">
+                <h2>Products Samples</h2>
+                <div id="spot1">
+                   <img src="images/food2.jpg" alt="fresh food">
+                    
+                <div id="spot2">                   
+                    <img src="images/food1.jpg" alt="Quality">
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <section id="about">
+                <div id="address">
+                    <h3>We Located</h3>
+                    <p>Makindye Div</p>
+                    <p>Kampala Uganda</p>
+                    <a href="#">Directions</a> 
+                </div>
+                <div id="contact">
+                    <h3>Contact Us</h3>
+                    <p>info@ocm.ug</p>
+                    <p> +256-776-7850</p>
+                </div>
+    
+            <section id="copyright">
+                <p>&copy; <span id="copyrightYear"></span>Bountiful Food | Peter Charles Otim | WDD230 BYU</p>
+                <p>lastModified: <span id="lastModified"></span></p>
+                <p><span id="lastVisited"></span></p>
+            </section>
+        </footer>
+        
+        <script src="scripts/javascript.js" async defer></script>
+        <script src="scripts/date.js"></script>
+    </body>
+</html>
