@@ -93,12 +93,12 @@
         margin-top: 0;
     }
 
-    #join {
+    #reach {
         grid-column: 1;
         grid-row: 3;
     }
 
-    #news {
+    #fruitz {
         grid-column: 2;
         grid-row: 3;
         margin-top: -105px;
@@ -106,7 +106,7 @@
         line-height: 1.5em;
     }
 
-    #news a {
+    #fruitz a {
         text-decoration: none;
         color: #3a3a3a;
     }
@@ -120,7 +120,7 @@
         height: auto
     }
 
-    #spot1 img, #spot2 img, #spot3 img {
+    #area1 img, #area2 img, #area3 img {
         width: 100%;
         height: 400px;
         overflow: hidden;
@@ -128,7 +128,7 @@
         bottom: 150px;
     }
 
-    #spot1 h3, #spot2 h3, #spot3 h3 {
+    #area1 h3, #area2 h3, #area3 h3 {
         z-index: 3;
         position: relative;
         top: 125px;
@@ -145,7 +145,7 @@
         color: #fca311;
     }
 
-    #spot1, #spot2, #spot3 {
+    #area1, #area2, #area3 {
         width: 95%;
         height: 400px;
         margin: 10px;
@@ -211,12 +211,5 @@
         padding: 20px;
     }
 
-    /*.board {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        gap: 20px;
-    }
-    */
     
 }

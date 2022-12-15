@@ -53,12 +53,12 @@
         margin-top: -25px;
     }
 
-    #join {
+    #reach {
         grid-column: 2;
         grid-row: 2;
     }
 
-    #news {
+    #fruitz {
         grid-column: 2;
         grid-row: 4;
         overflow: scroll;
@@ -73,12 +73,12 @@
         /* flex-wrap: wrap; */
     }
 
-    #spot1, #spot2, #spot3 {
+    #area1, #area2, #area3 {
         width: 31%;
         /* height: 90%; */
     }
 
-    #spot1 img, #spot2 img, #spot3 img {
+    #area1 img, #area2 img, #area3 img {
         width: 100%;
         overflow: hidden;
         position: relative;
@@ -86,7 +86,7 @@
         /* position: relative; */
     }
 
-    #spot1 h3, #spot2 h3, #spot3 h3 {
+    #area1 h3, #area2 h3, #area3 h3 {
         position: relative;
         top: 75px;
         font-size: 2em;
@@ -121,9 +121,10 @@
         display: block;
     }
 
-    .discover div:hover{
+   /* .discover div:hover{
         -moz-box-shadow: 0 0 10px #ccc;
         -webkit-box-shadow: 0 0 10px #ccc;
         box-shadow: 0 0 10px #ccc;
       }
+      */
 }
